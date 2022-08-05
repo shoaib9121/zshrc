@@ -1,6 +1,11 @@
 # .zshrc
 This file contains the various `.bashrc/.zshrc` scripts
 
+# For vscode to open file/directory through `code` command
+```
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+```
+
 # Visual Customization Power Level Shell
 Below are the scripts for custom shell based on theme `powerlevel9k/powerlevel9k`
 ```
