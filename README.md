@@ -1,7 +1,7 @@
 # .zshrc
 This file contains the various `.bashrc/.zshrc` scripts
 
-# VISUAL CUSTOMISATION POWER LEVEL SHELL
+# Visual Customization Power Level Shell
 Below are the scripts for custom shell based on theme `powerlevel9k/powerlevel9k`
 ```
 ZSH_THEME="powerlevel9k/powerlevel9k"
