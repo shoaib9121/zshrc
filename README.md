@@ -27,3 +27,6 @@ run `source ~/.zshrc` (prompt wizard should appear)
 
 If prompt wizard not appeared
 run `p10k configure`
+
+#### Reference
+https://dev.to/abdfnx/oh-my-zsh-powerlevel10k-cool-terminal-1no0
