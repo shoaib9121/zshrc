@@ -7,30 +7,23 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 ```
 
 # Visual Customization Power Level Shell
-Below are the scripts for custom shell based on theme `powerlevel9k/powerlevel9k`
-```
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-```
-#### Add a space in the first prompt 
-```
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
-```
-#### Visual customisation of the second prompt line
-```
-local user_symbol="$"
-if [[ $(print -P "%#") =~ "#" ]]; then
-    user_symbol = "#"
-fi
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%{%B%F{black}%K{yellow}%} $user_symbol%{%b%f%k%F{yellow}%} %{%f%}"
-```
-#### Change the git status to red when something isn't committed and pushed
-```
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
-```
-#### And finally give the path to theme
-```
-source /Users/[HOME_USER]/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
-```
+Below are the scripts for custom shell based on theme `Powerlevel10k`
+
+## Install Fonts
+[MesloLGS NF Regular.ttf](https://github.com/romkatv/powerlevel10k#configuration-wizard:~:text=MesloLGS%20NF%20Regular.ttf)
+[MesloLGS NF Bold.ttf](https://github.com/romkatv/powerlevel10k#configuration-wizard:~:text=MesloLGS%20NF%20Bold.ttf)
+[MesloLGS NF Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)
+[MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
+
+## Install `Oh My Zsh`
+
+```sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"```
+
+## Powerlevel10k
+```git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k```
+
+Paste `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` file
+run `source ~/.zshrc` (prompt wizard should appear)
+
+If prompt wizard not appeared
+run `p10k configure`
