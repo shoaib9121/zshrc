@@ -18,10 +18,14 @@ Below are the scripts for custom shell based on theme `Powerlevel10k`
 
 ## Install `Oh My Zsh`
 
-```sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"```
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ## Powerlevel10k
-```git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k```
+```
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
 
 Paste `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` file
 run `source ~/.zshrc` (prompt wizard should appear)
@@ -37,11 +41,15 @@ https://www.swtestacademy.com/customize-mac-terminal/
 ---
 
 ## Install `nvm`
-```brew update```
-```brew install nvm ```
+```
+brew update
+brew install nvm
+```
 
 Create a directory for NVM at home.
-```mkdir ~/.nvm```
+```
+mkdir ~/.nvm
+```
 
 Add below snippet in ~/.zshrc
 ```
