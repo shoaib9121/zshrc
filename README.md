@@ -32,3 +32,14 @@ run `p10k configure`
 https://dev.to/abdfnx/oh-my-zsh-powerlevel10k-cool-terminal-1no0
 
 https://www.swtestacademy.com/customize-mac-terminal/
+
+## Install `nvm`
+```brew update```
+```brew install nvm ```
+
+Create a directory for NVM at home.
+```mkdir ~/.nvm```
+
+Add below snippet in ~/.zshrc
+```export NVM_DIR="~/.nvm" ```
+```source $(brew --prefix nvm)/nvm.sh```
