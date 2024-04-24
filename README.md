@@ -22,6 +22,10 @@ Below are the scripts for custom shell based on theme `Powerlevel10k`
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+Below output should be displayed after install
+
+<img width="1224" alt="ohmyzsh" src="https://github.com/shoaib9121/zshrc/assets/24590278/40d67c24-a2c3-4410-9714-c2516ea6968e">
+
 ## Powerlevel10k
 ```
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
